@@ -24,10 +24,9 @@ const x = document.getElementById("demo");
     }
 
     function showPosition(position) {
-      x.innerHTML = "Latitude: " + position.coords.latitude + 
-      "<br>Longitude: " + position.coords.longitude;    
+      x.innerHTML = "Sua Latitude: " + position.coords.latitude + 
+      "<br>Sua Longitude: " + position.coords.longitude;       
     }
-
     
     document.addEventListener('DOMContentLoaded', function(){
 
@@ -37,7 +36,12 @@ const x = document.getElementById("demo");
   
           var latitude   = position.coords.latitude;
           var longitude  = position.coords.longitude;
-          var coordinate = new google.maps.LatLng(latitude, longitude); 
+          var coordinate = new google.maps.LatLng(latitude, longitude);
+
+         // var marechalLatitude = -29.81433;
+          if (latitude < -29.815696554805946 || longitude < -51.146654182388644){
+            alert('ghdfuijjhfjgk')
+        }  
 
           var optionsMap = {
                       center : coordinate,
