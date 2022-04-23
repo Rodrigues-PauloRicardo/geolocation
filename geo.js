@@ -1,18 +1,27 @@
 const x = document.getElementById("demo");  
 
+let dataAtual = new Date();
+//let dia = dataAtual.getDate();
+//let mes = (dataAtual.getMonth() + 1);
+//let ano = dataAtual.getFullYear();
+
+
+
     function getLocation() {
         var radio = document.getElementsByName("radiobutton");
 
                 var marechalLatitude = -29.81433;
                 var marechalLongitude = -51.14550;
+              //  let horas = dataAtual.getHours();
+                //let minutos = dataAtual.getMinutes();
 
         for(var i = 0; i < radio.length; i++){
             if (radio[i].checked && radio[i].value === 'marechal'){                
-            alert ('Alerta Marechal')
+        //    alert ('Alerta Marechal')
         }if (radio[i].checked && radio[i].value === 'vanessa'){
-        alert ('Alerta Vanessa')
+      //  alert ('Alerta Vanessa')
     }if (radio[i].checked && radio[i].value === 'valmir'){
-    alert ('Alerta Valmir')
+    //alert ('Alerta Valmir')
 }
         }    
       
@@ -39,8 +48,10 @@ const x = document.getElementById("demo");
           var coordinate = new google.maps.LatLng(latitude, longitude);
 
          // var marechalLatitude = -29.81433;
-          if (latitude < -29.815696554805946 || longitude < -51.146654182388644){
-            alert('ghdfuijjhfjgk')
+          let horas = dataAtual.getHours();
+
+          if (latitude < -29.815696554805946 && longitude < -51.146654182388644 && horas >=8 || horas <=12){
+            alert('ATENÇÃO Equipamento fora da Localização Especificada')
         }  
 
           var optionsMap = {

@@ -1,3 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D1EEFC;
+}
+img{   
+    width: 100%;
+}
+h2{
+    margin: 5px;
+}
+h3{
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    color: #046EB5;
+    background-color: #fff;
+}
+#myradio_1{
+    margin: 5px;
+}
+h4{
+    margin: 5px;
+}
 
-        html, body, #map { height: 80%; margin: 5; }
+
+    #map{
+     border: 1px solid red;
+     height: 200px;
+     width: 100%;
+    }
  
