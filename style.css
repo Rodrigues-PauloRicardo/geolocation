@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #D1EEFC;
+    text-align: center;
 }
 img{   
     width: 100%;
@@ -13,9 +14,7 @@ h2{
 h3{
     margin: 5px;
     display: flex;
-    text-align: center;
     color: #046EB5;
-    background-color: #fff;
 }
 #myradio_1{
     margin: 5px;
@@ -24,10 +23,19 @@ h4{
     margin: 5px;
 }
 
+#email{
+    min-width: 300px;
+}
+button{
+    margin-top: 10px;
+}
 
     #map{
-     border: 1px solid red;
-     height: 200px;
+     height: 170px;
      width: 100%;
+    }
+
+    footer{
+        margin: 5px;
     }
  

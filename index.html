@@ -18,13 +18,15 @@
 <!--<input type="radio" name="radiobutton" id="myradio_2" value="vanessa" >Escola Vanessa Ceconeti
 <input type="radio" name="radiobutton" id="myradio_3" value="valmir">Escola Valmir Martins -->
 
-    <h3>QUERO RECEBER UM ALERTA ('caso meu filho saia do raio escolar')</h3>
-    
+    <h3>QUERO RECEBER UM ALERTA ('filho fora do raio escolar')</h3>
+
     <h4>Turno de Segunda a Sexta</h4>
 
 <input type="radio" name="radio" id="myradio_4" value="manha" checked> Manhã 8:00 ás 12:00 horas    
     
-    <p>Clique no botão para obter suas coordenadas.</p>
+    <p>Clique no botão para obter suas coordenadas e gravar email para o aviso.</p>
+
+    <input type="email" name="email" id="email" placeholder="seuemail@email.com">
     
     <button onclick="getLocation()">Buscar</button>
     
@@ -36,6 +38,9 @@
 <script src="js/map.js"></script>
 
     <script src="geo.js"></script>
+
+
+    <footer>Desenvolvido por Paulo Ricardo<br>Todos os direitos reservados®</footer>
          
 </body>
 </html>
