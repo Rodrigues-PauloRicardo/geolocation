@@ -1,5 +1,4 @@
 body{
-    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #D1EEFC;
@@ -23,8 +22,16 @@ h4{
     margin: 5px;
 }
 
+form{
+    overflow: hidden;
+    width: 100%;
+}
 #email{
-    min-width: 300px;
+    width: 100%;
+}
+#salvarExcluir{
+    display: flex;
+    justify-content: space-between;
 }
 button{
     margin-top: 10px;
@@ -37,5 +44,13 @@ button{
 
     footer{
         margin: 5px;
+    }
+
+    button:hover{
+        box-shadow: inset 200px 0 0 #35282855;
+    }
+    #delete{
+        background-color: rgb(221, 20, 20);
+        color: #fff;
     }
  
