@@ -72,3 +72,18 @@ let dataAtual = new Date();
   
       });
   });
+
+
+ function saveDataToLocalStorage() {
+  const email = document.querySelector("#email").value;
+  localStorage.setItem("arquivo1", email);
+  if(email ===''){
+    alert('Adicione um e-mail válido')
+  } else{
+    alert('Seu e-mail: ' + email + ' foi salvo com sucesso!' );
+  }
+}
+
+function verificar() {
+  alert("O email salvo é : " + localStorage.getItem("arquivo1"));
+}
