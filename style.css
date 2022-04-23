@@ -38,6 +38,7 @@ button{
 }
 
     #map{
+        margin-top: 10px;
      height: 170px;
      width: 100%;
     }
@@ -49,8 +50,6 @@ button{
     button:hover{
         box-shadow: inset 200px 0 0 #35282855;
     }
-    #delete{
-        background-color: rgb(221, 20, 20);
-        color: #fff;
-    }
+   
+  
  

@@ -27,15 +27,15 @@
     <p>DIGITE O EMAIL PARA RECEBER OS AVISOS</p>
     <form class="box">        
     <input type="email" name="email" id="email" placeholder="seuemail@gmail.com">
+
     <div id="salvarExcluir">
     
     <button onclick="saveDataToLocalStorage()">Salvar Email</button>
 
-    <button id='verificar' onclick="verificar()">Verificar email Salvo</button>  
+    <button id='verificar' onclick="showLocalStorageData()">Verificar email Salvo</button>  
 
     <button onclick="getLocation()">Localização</button>
     </div>
-    <p id="demo"></p> 
     <div id="map"></div>  
     </form>
         

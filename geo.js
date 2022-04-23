@@ -33,8 +33,8 @@ let dataAtual = new Date();
     }
 
     function showPosition(position) {
-      x.innerHTML = "Sua Latitude: " + position.coords.latitude + 
-      "<br>Sua Longitude: " + position.coords.longitude;       
+      alert("Sua Latitude: " + position.coords.latitude + 
+      "<br>Sua Longitude: " + position.coords.longitude);       
     }
     
     document.addEventListener('DOMContentLoaded', function(){
@@ -74,8 +74,8 @@ let dataAtual = new Date();
   });
 
 
- function saveDataToLocalStorage() {
-  const email = document.querySelector("#email").value;
+ function saveDataToLocalStorage(){
+  var email = document.querySelector("#email").value;
   localStorage.setItem("arquivo1", email);
   if(email ===''){
     alert('Adicione um e-mail válido')
@@ -84,6 +84,6 @@ let dataAtual = new Date();
   }
 }
 
-function verificar() {
-  alert("O email salvo é : " + localStorage.getItem("arquivo1"));
+function showLocalStorageData() {
+  alert("O valor guardado é: " + localStorage.getItem("arquivo1"));
 }
