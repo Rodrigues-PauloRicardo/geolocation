@@ -75,15 +75,16 @@ let dataAtual = new Date();
 
 
  function saveDataToLocalStorage(){
-  var email = document.querySelector("#email").value;
+  let email = document.querySelector("#email").value;
   localStorage.setItem("arquivo1", email);
   if(email ===''){
-    alert('Adicione um e-mail válido')
+    alert('Adicione um email válido')
   } else{
     alert('Seu e-mail: ' + email + ' foi salvo com sucesso!' );
   }
 }
 
-function showLocalStorageData() {
-  alert("O valor guardado é: " + localStorage.getItem("arquivo1"));
+function showLocalStorageData() { 
+  alert("O último email salvo é: " + localStorage.getItem("arquivo1"));
 }
+
