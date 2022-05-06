@@ -16,6 +16,10 @@ let dataAtual = new Date();
                 //let minutos = dataAtual.getMinutes();
 
         for(var i = 0; i < radio.length; i++){
+
+
+
+
             if (radio[i].checked && radio[i].value === 'marechal'){                
         //    alert ('Alerta Marechal')
         }if (radio[i].checked && radio[i].value === 'vanessa'){
@@ -77,14 +81,12 @@ let dataAtual = new Date();
  function saveDataToLocalStorage(){
   let email = document.querySelector("#email").value;
   localStorage.setItem("arquivo1", email);
-  if(email ===''){
-    alert('Adicione um email válido')
-  } else{
-    alert('Seu e-mail: ' + email + ' foi salvo com sucesso!' );
-  }
+
+  var verificar = (email ==='') ? 'Adicione um email válido' : 'Seu e-mail: ' + email + ' foi salvo com sucesso!';
+  alert (verificar); 
 }
 
 function showLocalStorageData() { 
   alert("O último email salvo é: " + localStorage.getItem("arquivo1"));
-}
+};
 
