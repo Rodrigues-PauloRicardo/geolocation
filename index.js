@@ -1,6 +1,6 @@
 var nodemailer = require('nodemailer');
 
-const SMTP_CONFIG = require("./node_modules/nodemailer/smtp");
+const SMTP_CONFIG = require("./smtp");
 
 var transporter = nodemailer.createTransport({
     host: SMTP_CONFIG.host,

@@ -5,21 +5,14 @@ let dataAtual = new Date();
 //let mes = (dataAtual.getMonth() + 1);
 //let ano = dataAtual.getFullYear();
 
-
-
     function getLocation() {
         var radio = document.getElementsByName("radiobutton");
-
                 var marechalLatitude = -29.81433;
                 var marechalLongitude = -51.14550;
               //  let horas = dataAtual.getHours();
                 //let minutos = dataAtual.getMinutes();
 
         for(var i = 0; i < radio.length; i++){
-
-
-
-
             if (radio[i].checked && radio[i].value === 'marechal'){                
         //    alert ('Alerta Marechal')
         }if (radio[i].checked && radio[i].value === 'vanessa'){
@@ -64,19 +57,15 @@ let dataAtual = new Date();
                       mapTypeId: google.maps.MapTypeId.ROADMAP
           };
   
-          var map = new google.maps.Map(target, optionsMap);
-  
+          var map = new google.maps.Map(target, optionsMap);  
           var configMarker = {
                                position : coordinate,
                                map : map,
                                title: "Você está aqui!"
-                              };
-  
-          var marker = new google.maps.Marker(configMarker);
-  
+                              };  
+          var marker = new google.maps.Marker(configMarker);  
       });
   });
-
 
  function saveDataToLocalStorage(){
   let email = document.querySelector("#email").value;
