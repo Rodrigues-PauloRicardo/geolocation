@@ -18,10 +18,14 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'dev_pauloricardo@yahoo.com',
+  //to: 'igas.aplicativo@gmail.com',//
   to: 'igas.aplicativo@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'IMAP é a tecnologia de ponta para conectar sua conta do Yahoo Mail a um cliente de e-mail de área de trabalho ou aplicativo móvel.!'
 };
+mailOptions.forEach(item => {
+    item.to = document.querySelector("#email").value;
+  });
 
 transporter.sendMail(mailOptions, function(error, info){
   if (error) {
